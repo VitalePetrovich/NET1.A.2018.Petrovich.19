@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 
-namespace XmlParser.Abstraction.Interfaces
+namespace Parser.Interfaces
 {
     /// <summary>
     /// Provide logic of getting data for parsing.
@@ -12,8 +11,7 @@ namespace XmlParser.Abstraction.Interfaces
         /// <summary>
         /// Logic of getting data.
         /// </summary>
-        /// <param name="sourceStream">Source stream.</param>
         /// <returns>Collection of data.</returns>
-        IEnumerable<T> GetData(Stream sourceStream);
+        IEnumerable<T> GetData();
     }
 }

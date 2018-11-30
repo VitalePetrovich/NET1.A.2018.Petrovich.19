@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{19A4D4CB-A6EE-41B7-8424-76D066B1E959}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>XmlParser.Console</RootNamespace>
-    <AssemblyName>XmlParser.Console</AssemblyName>
+    <ProjectGuid>{B93A75CB-0DE5-49B0-900A-73DBF57FC868}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DependencyResolver</RootNamespace>
+    <AssemblyName>DependencyResolver</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -46,15 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DepResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XmlParser\Parser.csproj">
+    <ProjectReference Include="..\Parser.Interfaces\Parser.Interfaces.csproj">
+      <Project>{90ccbd53-41d1-479c-a269-e98f89376bfe}</Project>
+      <Name>Parser.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parser\Parser.csproj">
       <Project>{00570d22-741b-4b7a-bd1d-20b8ebcd2039}</Project>
       <Name>Parser</Name>
     </ProjectReference>

@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "XmlParser\Parser.csproj", "{00570D22-741B-4B7A-BD1D-20B8EBCD2039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver", "DependencyResolver\DependencyResolver.csproj", "{B93A75CB-0DE5-49B0-900A-73DBF57FC868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlParser.Console", "XmlParser.Console\XmlParser.Console.csproj", "{19A4D4CB-A6EE-41B7-8424-76D066B1E959}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser.Interfaces", "Parser.Interfaces\Parser.Interfaces.csproj", "{90CCBD53-41D1-479C-A269-E98F89376BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{00570D22-741B-4B7A-BD1D-20B8EBCD2039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser.Console", "Parser.Console\Parser.Console.csproj", "{19A4D4CB-A6EE-41B7-8424-76D066B1E959}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B93A75CB-0DE5-49B0-900A-73DBF57FC868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93A75CB-0DE5-49B0-900A-73DBF57FC868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93A75CB-0DE5-49B0-900A-73DBF57FC868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93A75CB-0DE5-49B0-900A-73DBF57FC868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90CCBD53-41D1-479C-A269-E98F89376BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CCBD53-41D1-479C-A269-E98F89376BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CCBD53-41D1-479C-A269-E98F89376BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CCBD53-41D1-479C-A269-E98F89376BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00570D22-741B-4B7A-BD1D-20B8EBCD2039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00570D22-741B-4B7A-BD1D-20B8EBCD2039}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00570D22-741B-4B7A-BD1D-20B8EBCD2039}.Release|Any CPU.ActiveCfg = Release|Any CPU

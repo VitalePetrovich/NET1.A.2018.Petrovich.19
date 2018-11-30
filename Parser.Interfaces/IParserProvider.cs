@@ -1,4 +1,4 @@
-﻿namespace XmlParser.Abstraction.Interfaces
+﻿namespace Parser.Interfaces
 {
     /// <summary>
     /// Provide logic of parsing.

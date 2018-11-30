@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 
-namespace XmlParser.Abstraction.Interfaces
+namespace Parser.Interfaces
 {
     /// <summary>
     /// Provide logic of sending content.
@@ -13,7 +12,6 @@ namespace XmlParser.Abstraction.Interfaces
         /// Logic of sending content.
         /// </summary>
         /// <param name="data">Content to send.</param>
-        /// <param name="destinationStream">Destination to send.</param>
-        void Send(IEnumerable<T> data, Stream destinationStream);
+        void Send(IEnumerable<T> data);
     }
 }

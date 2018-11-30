@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XmlParser.Logger
+namespace Parser.Interfaces
 {
     public interface ILogger
     {
@@ -22,17 +22,5 @@ namespace XmlParser.Logger
         /// </summary>
         /// <param name="ex">Exception.</param>
         void Fatal(Exception ex);
-
-        /// <summary>
-        /// Register logger to parser events.
-        /// </summary>
-        /// <param name="printer">Printer.</param>
-        void Register(StringToXmlParser parser);
-
-        /// <summary>
-        /// Unregister logger to parser events.
-        /// </summary>
-        /// <param name="printer">Printer.</param>
-        void Unregister(StringToXmlParser parser);
     }
 }
